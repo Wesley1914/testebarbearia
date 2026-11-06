@@ -1,0 +1,6 @@
+{
+  "name": "Barbearia Nohvo Santana",
+  "description": "Site oficial da Barbearia Nohvo Santana. Cortes modernos, alinhamento de barba e experiência premium de cuidado masculino. Agende pelo WhatsApp e avalie no Google.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

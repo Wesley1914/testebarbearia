@@ -1,0 +1,228 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-heading: 'Outfit', sans-serif;
+    --font-sans: 'Plus Jakarta Sans', sans-serif;
+    --color-primary-blue: #101c2c;
+    --color-dark-blue: #092442;
+    --color-accent-orange: #F28C28;
+    --color-light-gray: #F4F6F8;
+  }
+
+  html {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+}
+
+/* 3D Physical Button Styles */
+.btn-3d {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border-radius: 0.85rem;
+  transition: all 0.15s cubic-bezier(0.16, 1, 0.3, 1);
+  user-select: none;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+/* 3D Orange (Hero & WhatsApp Actions) */
+.btn-3d-orange {
+  background: linear-gradient(180deg, #f59e0b 0%, #F28C28 100%);
+  color: #FFFFFF;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 5px 0 #b45e0d, 0 8px 18px rgba(242, 140, 40, 0.35);
+}
+.btn-3d-orange:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 7px 0 #b45e0d, 0 12px 22px rgba(242, 140, 40, 0.45);
+  background: linear-gradient(180deg, #fbbf24 0%, #f59e0b 100%);
+}
+.btn-3d-orange:active {
+  transform: translateY(4px);
+  box-shadow: 0 1px 0 #b45e0d, 0 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* 3D White (Luxury Contrast) */
+.btn-3d-white {
+  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+  color: #092442;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 5px 0 #cbd5e1, 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.btn-3d-white:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 7px 0 #94a3b8, 0 12px 20px rgba(0, 0, 0, 0.25);
+  color: #101c2c;
+}
+.btn-3d-white:active {
+  transform: translateY(4px);
+  box-shadow: 0 1px 0 #64748b, 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* 3D Navy (Dark Surface Depth) */
+.btn-3d-navy {
+  background: linear-gradient(180deg, #133458 0%, #092442 100%);
+  color: #FFFFFF;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 5px 0 #04101e, 0 8px 18px rgba(0, 0, 0, 0.45);
+}
+.btn-3d-navy:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 7px 0 #04101e, 0 12px 22px rgba(0, 0, 0, 0.55);
+  background: linear-gradient(180deg, #184270 0%, #0d2e53 100%);
+}
+.btn-3d-navy:active {
+  transform: translateY(4px);
+  box-shadow: 0 1px 0 #04101e, 0 3px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* 3D WhatsApp Green */
+.btn-3d-whatsapp {
+  background: linear-gradient(180deg, #25D366 0%, #1ea952 100%);
+  color: #FFFFFF;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 5px 0 #15803d, 0 8px 18px rgba(37, 211, 102, 0.35);
+}
+.btn-3d-whatsapp:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 7px 0 #15803d, 0 12px 24px rgba(37, 211, 102, 0.45);
+  background: linear-gradient(180deg, #2ae06f 0%, #22c55e 100%);
+}
+.btn-3d-whatsapp:active {
+  transform: translateY(4px);
+  box-shadow: 0 1px 0 #15803d, 0 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* 3D Google Review Button */
+.btn-3d-google {
+  background: #ffffff;
+  color: #1f2937;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 5px 0 #d1d5db, 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+.btn-3d-google:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 7px 0 #cbd5e1, 0 12px 20px rgba(0, 0, 0, 0.18);
+  background: #fafafa;
+}
+.btn-3d-google:active {
+  transform: translateY(4px);
+  box-shadow: 0 1px 0 #9ca3af, 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* 3D Instagram Gradient Button */
+.btn-3d-instagram {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 5px 0 #831843, 0 8px 18px rgba(220, 39, 67, 0.35);
+}
+.btn-3d-instagram:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 7px 0 #831843, 0 12px 24px rgba(220, 39, 67, 0.45);
+  filter: brightness(1.05);
+}
+.btn-3d-instagram:active {
+  transform: translateY(4px);
+  box-shadow: 0 1px 0 #831843, 0 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* 3D Full-Width Bio Card */
+.bio-card-3d {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 1.25rem;
+  border-radius: 1rem;
+  transition: all 0.15s cubic-bezier(0.16, 1, 0.3, 1);
+  user-select: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.bio-card-3d-orange {
+  background: linear-gradient(135deg, #1b3554 0%, #0d2847 100%);
+  border: 1.5px solid #F28C28;
+  box-shadow: 0 5px 0 #b45e0d, 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+.bio-card-3d-orange:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 7px 0 #b45e0d, 0 14px 24px rgba(242, 140, 40, 0.25);
+  border-color: #fbbf24;
+}
+.bio-card-3d-orange:active {
+  transform: translateY(4px);
+  box-shadow: 0 1px 0 #b45e0d, 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.bio-card-3d-primary {
+  background: linear-gradient(180deg, #F28C28 0%, #d97706 100%);
+  border: 1.5px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 5px 0 #92400e, 0 10px 22px rgba(242, 140, 40, 0.4);
+}
+.bio-card-3d-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 7px 0 #92400e, 0 14px 26px rgba(242, 140, 40, 0.5);
+  background: linear-gradient(180deg, #fbbf24 0%, #f59e0b 100%);
+}
+.bio-card-3d-primary:active {
+  transform: translateY(4px);
+  box-shadow: 0 1px 0 #92400e, 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.bio-card-3d-navy {
+  background: linear-gradient(180deg, #0e2a4b 0%, #092442 100%);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 5px 0 #04101e, 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+.bio-card-3d-navy:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 7px 0 #04101e, 0 14px 24px rgba(0, 0, 0, 0.5);
+  border-color: rgba(242, 140, 40, 0.4);
+}
+.bio-card-3d-navy:active {
+  transform: translateY(4px);
+  box-shadow: 0 1px 0 #04101e, 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.bio-card-3d-white {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 5px 0 #cbd5e1, 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+.bio-card-3d-white:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 7px 0 #94a3b8, 0 14px 24px rgba(0, 0, 0, 0.2);
+}
+.bio-card-3d-white:active {
+  transform: translateY(4px);
+  box-shadow: 0 1px 0 #64748b, 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #092442;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e3a5f;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #F28C28;
+}
